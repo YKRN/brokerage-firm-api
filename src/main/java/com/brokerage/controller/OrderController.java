@@ -27,7 +27,6 @@ public class OrderController {
             @RequestParam Double size,
             @RequestParam Double price) {
 
-        // Yeni bir emir oluşturma işlemi
         return orderService.createOrder(customerId, assetName, orderSide, size, price);
     }
 
