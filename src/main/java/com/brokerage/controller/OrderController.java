@@ -42,7 +42,7 @@ public class OrderController {
 
     @DeleteMapping("/{orderId}")
     public void cancelOrder(@PathVariable Long orderId) {
-        // Bekleyen bir emri iptal etme işlemi
+     
         orderService.cancelOrder(orderId);
     }
 
