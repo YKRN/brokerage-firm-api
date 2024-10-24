@@ -36,7 +36,7 @@ public class OrderController {
             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime startDate,
             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime endDate) {
 
-        // Belirli bir müşteri kimliği ve tarih aralığına göre emirleri listeleme
+     
         return orderService.getOrdersByCustomerIdAndDateRange(customerId, startDate, endDate);
     }
 
