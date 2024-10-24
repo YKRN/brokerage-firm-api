@@ -11,7 +11,7 @@ public class TransactionController {
 
     @Autowired
     private WithdrawalService withdrawalService;
-
+@PreAuthorize("hasRole('USER') or hasRole('ADMIN')")
     @PostMapping("/withdraw")
     public Withdrawal withdrawMoney(
             @RequestParam Long customerId,
