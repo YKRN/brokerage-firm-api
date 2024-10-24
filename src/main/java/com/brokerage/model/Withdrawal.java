@@ -19,7 +19,7 @@ public class Withdrawal {
         this.withdrawalDate = LocalDateTime.now();
     }
 
-    // Getter ve Setter metotları
+   
 
     public Long getId() {
         return id;
