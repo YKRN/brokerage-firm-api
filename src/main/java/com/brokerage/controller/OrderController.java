@@ -48,13 +48,13 @@ public class OrderController {
 
     @GetMapping
     public List<Order> getAllOrders() {
-        // Tüm emirleri listeleme
+
         return orderService.getAllOrders();
     }
 
     @PostMapping("/match")
     public void matchPendingOrders() {
-        // Bekleyen emirleri eşleştirme işlemi
+ 
         orderService.matchPendingOrders();
     }
 }
