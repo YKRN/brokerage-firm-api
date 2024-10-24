@@ -108,4 +108,11 @@ public class OrderService {
             orderRepository.save(order);
         }
     }
+
+    @Transactional(readOnly = true)
+    public List<Order> getOrdersByCustomerId(Long customerId) {
+
+        return orderRepository.findByCustomerId(customerId);
+    }
+
 }
